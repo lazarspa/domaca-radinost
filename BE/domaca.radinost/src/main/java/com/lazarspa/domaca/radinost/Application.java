@@ -1,4 +1,4 @@
-package com.lazarspa.domacaradinost;
+package com.lazarspa.domaca.radinost;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -6,10 +6,10 @@ import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.boot.autoconfigure.mongo.MongoAutoConfiguration;
 
 @SpringBootApplication(exclude = {DataSourceAutoConfiguration.class, MongoAutoConfiguration.class})
-public class DomacaRadinostApplication {
+public class Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DomacaRadinostApplication.class, args);
+		SpringApplication.run(Application.class, args);
 	}
 
 }
