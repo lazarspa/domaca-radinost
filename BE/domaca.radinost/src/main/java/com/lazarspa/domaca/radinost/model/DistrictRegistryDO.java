@@ -2,7 +2,9 @@ package com.lazarspa.domaca.radinost.model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 
+@Builder
 @AllArgsConstructor
 @Entity
 @Table(name = "district_registry")

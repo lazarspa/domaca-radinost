@@ -5,25 +5,20 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.NoArgsConstructor;
 
+
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
 @Entity
 @Table(name = "vendor")
-public class VendorDO extends Person{
+public class VendorDO {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
-    private Integer id;
+    @JoinColumn(referencedColumnName = "id",name = "user_id")
+    @OneToOne
+    private UserDO user;
 
     //type of vendor
-
-    @JoinColumn(name = "muncipality_id",referencedColumnName = "id")
-    @ManyToOne
-    private MunicipalityRegistryDO municipality;
-
-    private String street;
-
-    private String number;
+    private String testTestVendor;
 
 }

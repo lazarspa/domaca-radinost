@@ -20,7 +20,7 @@ spring:
 
 hibernate:
   hbm2ddl:
-    auto: create
+    auto: create-drop
 
 logging:
   level:
